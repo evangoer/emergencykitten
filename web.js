@@ -30,7 +30,7 @@ app.get('/img/:id', function (req, res, next) {
     res.redirect(302, kitten.imageUrl);
 });
 
-app.get('/kitten/:id', function (req, res, next) {
+app.get('/pic/:id', function (req, res, next) {
     var kitten = kittens.byId(req.params.id);
 
     if (!kitten) {
